@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Villas Portfolio</title>
+    <title>Norenz Kristan Villas Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1 id="name">Norenz Kristan Villas</h1>
-        <img src="profile1.jpg" alt="Profile Picture" id="profile-img">
-        <p id="course-year">CCIS-IS - 2ND Year</p>
-        <button id="theme-toggle">Switch Theme</button>
+        <div class="profile-container">
+            <img src="profile1.jpg" alt="Profile Picture" id="profile-img">
+            <h1 id="name">Norenz Kristan Villas</h1>
+            <p id="course-year">CCIS-IS - 2ND Year</p>
+            <button id="theme-toggle">Switch Theme</button>
+        </div>
     </header>
 
-    <section id="achievements">
-        <h2>Achievements/Certifications</h2>
-        <ul>
-            <li>Achievement 1</li>
-            <li>Achievement 2</li>
-            <li>Achievement 3</li>
-        </ul>
-    </section>
+    <main>
+        <section id="achievements">
+            <h2>Achievements / Certifications</h2>
+            <ul class="cards">
+                <li class="card">Achievement 1</li>
+                <li class="card">Achievement 2</li>
+                <li class="card">Achievement 3</li>
+            </ul>
+        </section>
 
-    <section id="projects">
-        <h2>Previous Projects</h2>
-        <ul>
-            <li>Project 1</li>
-            <li>Project 2</li>
-            <li>Project 3</li>
-        </ul>
-    </section>
+        <section id="projects">
+            <h2>Previous Projects</h2>
+            <ul class="cards">
+                <li class="card">Project 1</li>
+                <li class="card">Project 2</li>
+                <li class="card">Project 3</li>
+            </ul>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
