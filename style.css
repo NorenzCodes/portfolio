@@ -214,10 +214,18 @@ section:hover h2::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at top left, rgba(99,102,241,0.25), transparent 60%);
+  background: radial-gradient(
+    circle at top left,
+    rgba(99,102,241,0.25),
+    transparent 60%
+  );
   opacity: 0;
   transition: opacity 0.4s ease;
+
+  /* 🔥 ADD THIS LINE */
+  pointer-events: none;
 }
+
 
 .project:hover::before {
   opacity: 1;
