@@ -1,43 +1,101 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Villas Portfolio</title>
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-      <header>
-         <div class="profile-container">
-            <img src="profile1.jpg" alt="Profile Picture" id="profile-img"> 
-            <h1 id="name">Norenz Kristan Villas</h1>
-            <p id="course-year">CCIS-IS - 2ND Year</p>
-            <button id="theme-toggle">Switch Theme</button> 
-         </div>
-      </header>
-      <main>
-         <section id="achievements">
-            <h2>Achievements / Certifications</h2>
-            <ul class="cards">
-               <li class="card">Achievement 1</li>
-               <li class="card">Achievement 2</li>
-               <li class="card">Achievement 3</li>
-            </ul>
-         </section>
-         <section id="projects">
-    <h2>Previous Projects</h2>
-    <ul class="cards">
-        <li class="card">
-            <a href="https://norenzcodes.github.io/landingPage/" target="_blank">
-                Landing Page
-            </a>
-        </li>
-        <li class="card">Project 2</li>
-        <li class="card">Project 3</li>
-    </ul>
+<head>
+  <meta charset="UTF-8">
+  <title>Norenz Villas | IS Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <span class="brand">NV</span>
+  <button id="theme-toggle">🌙 / ☀️</button>
+</nav>
+
+<header class="hero reveal">
+  <img src="profile1.jpg" alt="Profile">
+  <h1>Norenz Kristan Villas</h1>
+  <p class="title">Information Systems Student</p>
+  <p class="desc">
+    An Information Systems undergraduate exploring software development, system analysis,
+    and modern web technologies with a strong academic foundation.
+  </p>
+</header>
+
+<main>
+
+<section class="reveal">
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <span class="html" data-level="Strong">HTML</span>
+    <span class="css" data-level="Strong">CSS</span>
+    <span class="js" data-level="Intermediate">JavaScript</span>
+    <span class="cpp" data-level="Academic">C++</span>
+    <span class="java" data-level="Academic">Java</span>
+    <span class="git" data-level="Daily Use">GitHub</span>
+  </div>
 </section>
-         </section>
-      </main>
-      <script src="script.js"></script> 
-   </body>
+
+<section class="reveal">
+  <h2>Academic Achievements</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Dean’s List Recognition</h3>
+      <p>Maintained strong academic performance in Information Systems coursework.</p>
+    </div>
+    <div class="card">
+      <h3>System Analysis & Design</h3>
+      <p>Created structured workflows, models, and system documentation.</p>
+    </div>
+    <div class="card">
+      <h3>Programming Foundations</h3>
+      <p>Built solid logic and problem-solving skills through academic projects.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="project">
+      <h3>Landing Page</h3>
+      <p>
+        Responsive landing page focused on layout hierarchy, UI clarity,
+        and modern frontend techniques.
+      </p>
+      <a href="https://norenzcodes.github.io/landingPage/" target="_blank">
+        View Project →
+      </a>
+    </div>
+
+    <div class="project">
+      <h3>Country Explorer</h3>
+      <p>
+  Country Explorer API prototype is developed as my Web Programming M1
+  summative, demonstrating API consumption, dynamic rendering,
+  and data-driven UI.
+</p>
+      <a href="https://countriesbynvillas.vercel.app" target="_blank">
+        View Project →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  © 2026 Norenz Kristan Villas · Information Systems Portfolio
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
